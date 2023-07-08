@@ -4,7 +4,6 @@ import json
 import requests
 
 
-
 class TelegramBot():
     def __init__(self, config):
         self.token = self.read_token_from_config_file(config)

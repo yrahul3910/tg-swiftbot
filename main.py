@@ -7,7 +7,7 @@ def get_response(msg: str, multi: bool) -> Generator[tuple[str, str | None], Any
     full = None  # Expanded form of the acronym
     detected = ""  # Acronym detected
     for acronym in acronyms:
-        if acronym + "TV" in msg:
+        if acronym + "TV" in msg.upper():
             detected = acronym + "TV"
 
             if "Taylor's Version" not in acronyms[acronym]:
@@ -24,7 +24,7 @@ def get_response(msg: str, multi: bool) -> Generator[tuple[str, str | None], Any
             else:
                 break
         
-        if acronym in msg:
+        if acronym in msg.upper():
             detected = acronym
             full = acronyms[acronym]
 

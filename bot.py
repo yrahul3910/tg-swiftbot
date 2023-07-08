@@ -1,8 +1,6 @@
-import configparser as cfg
-import json
-
 import requests
-
+import json
+import configparser as cfg
 
 
 class TelegramBot():

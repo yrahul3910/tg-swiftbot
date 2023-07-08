@@ -1,6 +1,7 @@
 from typing import Any, Generator
-from bot import TelegramBot
+
 from acronyms import acronyms
+from bot import TelegramBot
 
 
 def get_response(msg: str, multi: bool) -> Generator[tuple[str, str | None], Any, None]:
@@ -17,13 +18,13 @@ def get_response(msg: str, multi: bool) -> Generator[tuple[str, str | None], Any
                     full = acronyms[acronym] + " (Taylor's Version)"
             else:
                 full = acronyms[acronym]
-            
+
             if multi:
                 yield detected, full
                 continue
             else:
                 break
-        
+
         if acronym in msg:
             detected = acronym
             full = acronyms[acronym]
@@ -32,7 +33,7 @@ def get_response(msg: str, multi: bool) -> Generator[tuple[str, str | None], Any
                 yield detected, full
             else:
                 break
-    
+
     yield detected, full
 
 
@@ -60,7 +61,7 @@ def make_reply(msg: str) -> str | None:
             detected, full = entry
             if full is not None:
                 reply += f"{list_formatter}{detected} can refer to: {full}\n"
-        
+
         return None if reply == "" else reply
 
     return None

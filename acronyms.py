@@ -122,58 +122,6 @@ acronyms = {
     "BTTWS": ["Bigger Than The Whole Sky", "Midnights (3am Edition)"],
     "WCS": ["Would've, Could've, Should've", "Midnights (3am Edition)"],
 
-    # 1989 (Deluxe Edition)
-    "WTNY": "Welcome To New York",
-    "OOTW": "Out Of The Woods",
-    "AYHTDWS": "All You Had To Do Was Stay",
-    "SIO": "Shake It Off",
-    "IWYW": "I Wish You Would",
-    "HYGTG": "How You Get The Girl",
-    "IKP": "I Know Places",
-    "YAIL": "You Are In Love",
-
-    # reputation
-    "RFI": "Ready For It",
-    "IDSB": "I Did Something Bad",
-    "DBM": "Don't Blame Me",
-    "LWYMMD": "Look What You Made Me Do",
-    "SIG": "So It Goes",
-    "KOMH": "King Of My Heart",
-    "DWOHT": "Dancing With Our Hands Tied",
-    "TIWWCHNT": "This Is Why We Can't Have Nice Things",
-    "CIWYW": "Call It What You Want",
-    "NYD": "New Year's Day",
-
-    # Lover
-    "IFTYE": "I Forgot That You Existed",
-    "ITHK": "I Think He Knows",
-    "MAATHP": "Miss Americana & The Heartbreak Prince",
-    "DBATC": "Death By A Thousand Cuts",
-    "SYGB": "Soon You'll Get Better",
-    "YNTCD": "You Need To Calm Down",
-    "INTHAF": "It's Nice To Have A Friend",
-
-    # folklore (deluxe version)
-    "TLGAD": "the last great american dynasty",
-    "MTR": "my tears ricochet",
-    "TIMT": "this is me trying",
-
-    # evermore (deluxe version)
-    "TIDS": "'tis the damn season",
-    "NBNC": "no body, no crime (ft. HAIM)",
-    "CLM": "cowboy like me",
-    "LSS": "long story short",
-    "RWYLM": "right where you left me",
-    "ITTG": "it's time to go",
-
-    # Midnights (Til The Dawn Edition)
-    "LH": "Lavender Haze",
-    "SOTB": "Snow On The Beach (ft. Lana Del Rey)",
-    "YOYOK": "You're On Your Own, Kid",
-    "TGW": "The Great War",
-    "BTTWS": "Bigger Than The Whole Sky",
-    "WCS": "Would've, Could've, Should've",
-
     # Others
     "CTF": ["Christmas Tree Farm", "Single"]
 }

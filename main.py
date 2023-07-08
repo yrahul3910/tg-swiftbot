@@ -1,39 +1,45 @@
 from typing import Any, Generator
+
+from acronyms import acronyms, taylorsVersions
 from bot import TelegramBot
-from acronyms import acronyms
 
 
 def get_response(msg: str, multi: bool) -> Generator[tuple[str, str | None], Any, None]:
     full = None  # Expanded form of the acronym
     detected = ""  # Acronym detected
+    album = None  # Album name
     for acronym in acronyms:
         if acronym + "TV" in msg.upper():
-            detected = acronym + "TV"
-
-            if "Taylor's Version" not in acronyms[acronym]:
-                if "(" in msg:
-                    full = acronyms[acronym] + " [Taylor's Version]"
-                else:
-                    full = acronyms[acronym] + " (Taylor's Version)"
+            if acronyms[acronym][1] in taylorsVersions:
+                detected = acronym + "TV"
             else:
-                full = acronyms[acronym]
-            
+                detected = acronym
+
+            album = acronyms[acronym][1]
+
+            if "Taylor's Version" not in acronyms[acronym][0] and acronyms[acronym][1] in taylorsVersions:
+                if "(" in msg:
+                    full = acronyms[acronym][0] + " [Taylor's Version]"
+                else:
+                    full = acronyms[acronym][0] + " (Taylor's Version)"
+            else:
+                full = acronyms[acronym][0]
+
             if multi:
-                yield detected, full
+                yield detected, full, album
                 continue
             else:
                 break
-        
         if acronym in msg.upper():
             detected = acronym
-            full = acronyms[acronym]
+            full, album = acronyms[acronym]
 
             if multi:
-                yield detected, full
+                yield detected, full, album
             else:
                 break
-    
-    yield detected, full
+
+    yield detected, full, album
 
 
 def make_reply(msg: str) -> str | None:
@@ -57,10 +63,10 @@ def make_reply(msg: str) -> str | None:
         # Compose reply message
         reply = ""
         for entry in entries:
-            detected, full = entry
+            detected, full, album = entry
             if full is not None:
-                reply += f"{list_formatter}{detected} can refer to: {full}\n"
-        
+                reply += f"{list_formatter}{detected} can refer to: {full}, from {album}\n"
+
         return None if reply == "" else reply
 
     return None

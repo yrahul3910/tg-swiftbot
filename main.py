@@ -1,3 +1,4 @@
+import re
 from typing import Any, Generator
 
 from acronyms import acronyms, taylorsVersions
@@ -9,18 +10,19 @@ def get_response(msg: str, multi: bool) -> Generator[tuple[str, str | None], Any
     detected = ""  # Acronym detected
     album = None
     for acronym in acronyms:
-        if acronym + "TV" in msg:
+        pattern = r"\b{}\b".format(re.escape(acronym + "TV"))
+        if re.search(pattern, msg, re.IGNORECASE):
             album = acronyms[acronym][1]
-            if acronyms[acronym] in taylorsVersions:
+            if album in taylorsVersions:
                 detected = acronym + "TV"
             else:
                 detected = acronym
 
             if "Taylor's Version" not in acronyms[acronym][0] and acronyms[acronym][1] in taylorsVersions:
                 if "(" in msg:
-                    full = acronyms[acronym] + " [Taylor's Version]"
+                    full = acronyms[acronym][0] + " [Taylor's Version]"
                 else:
-                    full = acronyms[acronym] + " (Taylor's Version)"
+                    full = acronyms[acronym][0] + " (Taylor's Version)"
             else:
                 full = acronyms[acronym][0]
 
@@ -30,7 +32,8 @@ def get_response(msg: str, multi: bool) -> Generator[tuple[str, str | None], Any
             else:
                 break
 
-        if acronym in msg:
+        pattern = r"\b{}\b".format(re.escape(acronym))
+        if re.search(pattern, msg, re.IGNORECASE):
             detected = acronym
             full = acronyms[acronym][0]
             album = acronyms[acronym][1]
@@ -95,3 +98,6 @@ while True:
                     bot.send_message(reply, from_)
             except Exception as e:
                 print(f"Failed, item = {item}: {e}")
+                # Print stack trace
+                import traceback
+                traceback.print_exc()

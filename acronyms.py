@@ -67,7 +67,7 @@ acronyms = {
     "GAH": ["Girl At Home", "Red (Taylor's Version)"],
     "SOG": ["State Of Grace", "Red (Taylor's Version)"],
     "MAIB": ["Message In a Bottle", "Red (Taylor's Version)"],
-    "IBYTHAM": ["I Bet You Think About Me", "Red (Taylor's Version)"],
+    "IBYTAM": ["I Bet You Think About Me", "Red (Taylor's Version)"],
     "TVFN": ["The Very First Night", "Red (Taylor's Version)"],
 
     # 1989 (Deluxe Edition)
@@ -123,7 +123,9 @@ acronyms = {
     "WCS": ["Would've, Could've, Should've", "Midnights (3am Edition)"],
 
     # Others
-    "CTF": ["Christmas Tree Farm", "Single"]
+    "CTF": ["Christmas Tree Farm", "Singles"],
+    "STF": ["Sweeter Than Fiction", "Singles"],
+    "S&S": ["Safe & Sound (Taylor's Version)", "Singles"],
 }
 
 taylorsVersions = [

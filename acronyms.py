@@ -66,7 +66,7 @@ acronyms = {
     "CBBH": ["Come Back... Be Here", "Red (Taylor's Version)"],
     "GAH": ["Girl At Home", "Red (Taylor's Version)"],
     "SOG": ["State Of Grace", "Red (Taylor's Version)"],
-    "MAIB": ["Message In a Bottle", "Red (Taylor's Version)"],
+    "MIAB": ["Message In a Bottle", "Red (Taylor's Version)"],
     "IBYTAM": ["I Bet You Think About Me", "Red (Taylor's Version)"],
     "TVFN": ["The Very First Night", "Red (Taylor's Version)"],
 

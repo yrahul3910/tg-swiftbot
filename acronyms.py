@@ -70,15 +70,19 @@ acronyms = {
     "IBYTAM": ["I Bet You Think About Me", "Red (Taylor's Version)"],
     "TVFN": ["The Very First Night", "Red (Taylor's Version)"],
 
-    # 1989 (Deluxe Edition)
-    "WTNY": ["Welcome To New York", "1989 (Deluxe Edition)"],
-    "OOTW": ["Out Of The Woods", "1989 (Deluxe Edition)"],
-    "AYHTDWS": ["All You Had To Do Was Stay", "1989 (Deluxe Edition)"],
-    "SIO": ["Shake It Off", "1989 (Deluxe Edition)"],
-    "IWYW": ["I Wish You Would", "1989 (Deluxe Edition)"],
-    "HYGTG": ["How You Get The Girl", "1989 (Deluxe Edition)"],
-    "IKP": ["I Know Places", "1989 (Deluxe Edition)"],
-    "YAIL": ["You Are In Love", "1989 (Deluxe Edition)"],
+    # 1989 (Taylor's Version)
+    "WTNY": ["Welcome To New York", "1989 (Taylor's Version)"],
+    "OOTW": ["Out Of The Woods", "1989 (Taylor's Version)"],
+    "AYHTDWS": ["All You Had To Do Was Stay", "1989 (Taylor's Version)"],
+    "SIO": ["Shake It Off", "1989 (Taylor's Version)"],
+    "IWYW": ["I Wish You Would", "1989 (Taylor's Version)"],
+    "HYGTG": ["How You Get The Girl", "1989 (Taylor's Version)"],
+    "IKP": ["I Know Places", "1989 (Taylor's Version)"],
+    "YAIL": ["You Are In Love", "1989 (Taylor's Version)"],
+    "SDG": ["Say Don't Go", "1989 (Taylor's Version)"],
+    "NTWDT": ["Now That We Don't Talk", "1989 (Taylor's Version)"],
+    "SL": ["Suburban Legends", "1989 (Taylor's Version)"],
+    "IION": ["Is It Over Now?", "1989 (Taylor's Version)"],
 
     # reputation
     "RFI": ["Ready For It", "reputation"],
@@ -100,6 +104,7 @@ acronyms = {
     "SYGB": ["Soon You'll Get Better", "Lover"],
     "YNTCD": ["You Need To Calm Down", "Lover"],
     "INTHAF": ["It's Nice To Have A Friend", "Lover"],
+    "AOTG": ["All Of The Girls", "Lover"],
 
     # folklore (deluxe version)
     "TLGAD": ["the last great american dynasty", "folklore (deluxe version)"],
@@ -131,5 +136,6 @@ acronyms = {
 taylorsVersions = [
     "Fearless (Taylor's Version)",
     "Speak Now (Taylor's Version)",
-    "Red (Taylor's Version)"
+    "Red (Taylor's Version)",
+    "1989 (Taylor's Version)"
 ]

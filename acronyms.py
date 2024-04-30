@@ -136,6 +136,7 @@ acronyms = {
     "FOTS": ["Fresh Out The Slammer", "The Tortured Poets Department"],
     "GAS": ["Guilty As Sin?", "The Tortured Poets Department"],
     "WAOLOM": ["Who's Afraid Of Little Old Me?", "The Tortured Poets Department"],
+    "ICFHNRIC": ["I Can Fix Him (No Really I Can)", "The Tortured Poets Department"],
     "ICDIWABH": ["I Can Do It With a Broken Heart", "The Tortured Poets Department"],
     "SMWEL": ["The Smallest Man Who Ever Lived", "The Tortured Poets Department"],
     "TSMWEL": ["The Smallest Man Who Ever Lived", "The Tortured Poets Department"],

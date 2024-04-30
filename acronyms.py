@@ -128,6 +128,26 @@ acronyms = {
     "WCS": ["Would've, Could've, Should've", "Midnights (3am Edition)"],
     "YLM": ["You're Losing Me", "Midnights (3am Edition)"],
 
+    # TTPD
+    "TTPD": ["The Tortured Poets Department", "The Tortured Poets Department"],
+    "MBOBHFT": ["My Boy Only Breaks His Favorite Toys", "The Tortured Poets Department"],
+    "SLL": ["So Long, London", "The Tortured Poets Department"],
+    "BDILH": ["But Daddy I Love Him", "The Tortured Poets Department"],
+    "FOTS": ["Fresh Out The Slammer", "The Tortured Poets Department"],
+    "GAS": ["Guilty As Sin?", "The Tortured Poets Department"],
+    "WAOLOM": ["Who's Afraid Of Little Old Me?", "The Tortured Poets Department"],
+    "ICDIWABH": ["I Can Do It With a Broken Heart", "The Tortured Poets Department"],
+    "SMWEL": ["The Smallest Man Who Ever Lived", "The Tortured Poets Department"],
+    "TSMWEL": ["The Smallest Man Who Ever Lived", "The Tortured Poets Department"],
+    "IGGYB": ["imgonnagetyouback", "The Tortured Poets Department"],
+    "CSSM": ["Chloe or Sam or Sophia or Marcus", "The Tortured Poets Department"],
+    "COSOSOM": ["Chloe or Sam or Sophia or Marcus", "The Tortured Poets Department"],
+    "HDIE": ["How Did It End?", "The Tortured Poets Department"],
+    "SHS": ["So High School", "The Tortured Poets Department"],
+    "IHIH": ["I Hate It Here", "The Tortured Poets Department"],
+    "TYA": ["thanK you aIMee", "The Tortured Poets Department"],
+    "ILIPW": ["I Look In People's Windows", "The Tortured Poets Department"],
+
     # Others
     "CTF": ["Christmas Tree Farm", "Singles"],
     "STF": ["Sweeter Than Fiction", "Singles"],
